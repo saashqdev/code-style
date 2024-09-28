@@ -1,0 +1,12 @@
+{
+  "name": "code-style",
+  "description": "Sharable lint config for Kubevue",
+  "version": "1.2.3",
+  "scripts": {
+    "stylelint": "cd stylelint && npm run test",
+    "eslint": "cd eslint && npm run test",
+    "tslint": "cd tilint && npm run test",
+    "test": "npm run eslint && npm run stylelint",
+    "install": "cd stylelint && npm install && cd ../eslint && npm install && cd ../tslint && npm install"
+  }
+}

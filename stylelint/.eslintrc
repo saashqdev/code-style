@@ -1,0 +1,6 @@
+{
+    "extends": "Kubevue/all",
+    "env": {
+        "commonjs": true
+    }
+}

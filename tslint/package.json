@@ -1,0 +1,32 @@
+{
+  "name": "tslint-config-Kubevue",
+  "description": "Sharable tslint config for Kubevue",
+  "version": "0.0.1",
+  "author": "TonyWang <452663934@qq.com>",
+  "repository": "Kubevue/tslint-config",
+  "bugs": {
+    "url": "https://github.com/Kubevue/code-style/issues"
+  },
+  "main": "./tslint-config/rules.js",
+  "scripts": {
+    "test": "tslint ./test/*.ts"
+  },
+  "license": "MIT",
+  "keywords": [
+    "tslint",
+    "tslint-config",
+    "tslintconfig",
+    "Kubevue"
+  ],
+  "tags": [
+    "tslint",
+    "tslint-config",
+    "tslintconfig",
+    "Kubevue"
+  ],
+  "devDependencies": {
+    "gulp-tslint": "^8.1.4",
+    "tslint": "^5.17.0",
+    "typescript": "^3.5.1"
+  }
+}
