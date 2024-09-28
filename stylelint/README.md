@@ -1,51 +1,51 @@
 # CSS Code Style
 
-## 配置
+## Configuration
 
-安装 [stylelint](https://github.com/stylelint/stylelint)
+Install [stylelint](https://github.com/stylelint/stylelint)
 
 ``` shell
-npm install --save-dev stylelint stylelint-config-Kubevue
+npm install --save-dev stylelint stylelint-config-kubevue
 ```
 
-然后创建`.stylelintrc`文件：
+Then create the .stylelintrc file:
 
 ``` json
 {
-  "extends": "stylelint-config-Kubevue"
+  "extends": "stylelint-config-kubevue"
 }
 ```
 
-## 编辑器配置
+## Editor Configuration
 
 ### VSCode
 
-使用插件 [vscode-stylelint](https://github.com/shinnn/vscode-stylelint)
+Use the plugin [vscode-stylelint](https://github.com/shinnn/vscode-stylelint)
 
 ``` json
-    /* stylelint配置 */
+    /* stylelint configuration */
     "stylelint.enable": true,
     "css.validate": false,
     "scss.validate": false,
 ```
 
-## 目录
-- [空白](#空白)
-- [大小写](#大小写)
-- [分号](#分号)
-- [引号](#引号)
-- [选择器](#选择器)
-- [属性](#属性)
-- [值](#值)
-- [注释](#注释)
-- [低级错误](#低级错误)
+## Table of Contents
+- [Blank](#blank)
+- [Uppercase](#uppercase)
+- [Semicolon](#semicolon)
+- [Quote Marks](#quote marks)
+- [Selector](#Selector)
+- [Properties](#Properties)
+- [Value](#value)
+- [Comments](#Comments)
+- [Low-Level Error](#Low-level error)
 
-> 说明：
-> - 语气：强制 > 要求 == !禁止 > 尽量 > 推荐 == !不推荐；
-> - 🔧表示 StyleLint 可以使用自动修复。
+> Description:
+> - Tone: Mandatory > Required == ! Prohibited > Try > Recommended == ! Not recommended;
+> - 🔧 indicates that StyleLint can use auto-fix.
 
-### 空白
-#### 要求使用4个空格作为缩进，禁止使用 Tab 🔧
+### Blank
+#### Require 4 spaces for indentation, no tabs allowed 🔧
 [indentation](https://stylelint.io/user-guide/rules/indentation)
 
 ``` css
@@ -60,7 +60,7 @@ a {
     color: white;
 }
 ```
-#### 禁止空文件
+#### Disable empty files
 [no-empty-source](https://stylelint.io/user-guide/rules/no-empty-source)
 
 ``` css
@@ -71,11 +71,11 @@ a {
 a {}
 ```
 
-<!-- TODO: 无法限制只有一个空行，且不起作用 -->
-#### 要求文件末尾有且只有一个空行 🔧
+<!-- TODO: There is no way to limit it to one blank line, and it does not work -->
+#### Requires that there is only one blank line at the end of the file🔧
 [no-missing-end-of-source-newline](https://stylelint.io/user-guide/rules/no-missing-end-of-source-newline)
 
-#### 禁止连续出现多个空行 🔧
+#### Multiple consecutive blank lines are prohibited🔧
 [max-empty-lines](https://stylelint.io/user-guide/rules/max-empty-lines)
 ```css
 /* ✗ bad */
@@ -91,11 +91,11 @@ a {
 }
 ```
 
-#### 禁止出现空行
+#### No blank lines allowed
 [custom-property-empty-line-before](https://stylelint.io/user-guide/rules/custom-property-empty-line-before),
 [function-max-empty-lines](https://stylelint.io/user-guide/rules/function-max-empty-lines),
 [value-list-max-empty-lines](https://stylelint.io/user-guide/rules/value-list-max-empty-lines),
-[declaration-empty-line-before](https://stylelint.io/user-guide/rules/declaration-empty-line-before) 🔧, TODO:规则没开
+[declaration-empty-line-before](https://stylelint.io/user-guide/rules/declaration-empty-line-before) 🔧, TODO: rule not enabled
 [rule-empty-line-before](https://stylelint.io/user-guide/rules/rule-empty-line-before),
 [at-rule-empty-line-before](https://stylelint.io/user-guide/rules/at-rule-empty-line-before)🔧
 ```css
@@ -105,10 +105,10 @@ a {} @media {}
 /* ✓ good */
 a {}
 ```
-#### 禁止行尾出现空格
+#### Disable trailing spaces
 [no-eol-whitespace](https://stylelint.io/user-guide/rules/no-eol-whitespace)
 
-#### 要求分号、逗号、冒号之前没有空格，之后必须有一个空格。@规则分号后另起一行
+#### Requires no space before semicolons, commas, and colons, and a space after them. @rule Start a new line after a semicolon
 <!-- [declaration-block-semicolon-newline-after](https://stylelint.io/user-guide/rules/declaration-block-semicolon-newline-after), -->
 [declaration-block-semicolon-newline-before](https://stylelint.io/user-guide/rules/declaration-block-semicolon-newline-before),
 [declaration-block-semicolon-space-after](https://stylelint.io/user-guide/rules/declaration-block-semicolon-space-after),
@@ -163,7 +163,7 @@ a {}
 
 ```
 
-#### 禁止在小括号（伪类选择器、函数、媒体查询）和中括号（属性选择器）内加空格，要求在大括号（块）内边缘加一个空格，括号之间加一个空格
+#### Do not add spaces inside parentheses (pseudo-class selectors, functions, media queries) and brackets (attribute selectors). Add one space inside the curly braces (blocks) and one space between the brackets.
 [selector-attribute-brackets-space-inside](https://stylelint.io/user-guide/rules/selector-attribute-brackets-space-inside),
 [selector-pseudo-class-parentheses-space-inside](https://stylelint.io/user-guide/rules/selector-pseudo-class-parentheses-space-inside),
 [function-parentheses-space-inside](https://stylelint.io/user-guide/rules/function-parentheses-space-inside),
@@ -183,7 +183,7 @@ input:not([type="submit"]) {}
 
 ```
 
-#### 要求块在独立的行，大括号前不能有空行，必须要有空格
+#### Requires blocks to be on separate lines. There cannot be blank lines before the curly braces. There must be spaces.
 
 [block-closing-brace-empty-line-before](https://stylelint.io/user-guide/rules/block-closing-brace-empty-line-before),
 [block-closing-brace-newline-after](https://stylelint.io/user-guide/rules/block-closing-brace-newline-after),
@@ -210,7 +210,7 @@ a {
 b { color: pink; }
 ```
 
-#### 不允许出现空块
+#### Empty blocks are not allowed
 [block-no-empty](https://stylelint.io/user-guide/rules/block-no-empty)
 
 ``` css
@@ -221,7 +221,7 @@ a { }
 a { color: pink; }
 ```
 
-#### 属性操作符周围不加空格，计算函数、媒体查询等其它操作符要加空格
+#### No spaces around attribute operators, but spaces around other operators such as calculation functions and media queries
 [selector-attribute-operator-space-after](https://stylelint.io/user-guide/rules/selector-attribute-operator-space-after),
 [selector-attribute-operator-space-before](https://stylelint.io/user-guide/rules/selector-attribute-operator-space-before),
 [media-feature-range-operator-space-after](https://stylelint.io/user-guide/rules/media-feature-range-operator-space-after),
@@ -239,7 +239,7 @@ a { top: calc(1px + 2px); }
 @media (width >= 600px) {}
 ```
 
-#### 要求选择器之间必须有空格，但不能有多余的空格
+#### Requires spaces between selectors, but no extra spaces
 [selector-combinator-space-after](https://stylelint.io/user-guide/rules/selector-combinator-space-after)🔧,
 [selector-combinator-space-before](https://stylelint.io/user-guide/rules/selector-combinator-space-before)🔧,
 [selector-descendant-combinator-no-non-space](https://stylelint.io/user-guide/rules/selector-descendant-combinator-no-non-space)
@@ -256,12 +256,12 @@ a> b { color: pink; }
 .foo .bar {}
 ```
 
-#### 要求`!`前必须加一个空格，后面不加
+#### Requires a space before `!` and no space after it
 [declaration-bang-space-after](https://stylelint.io/user-guide/rules/declaration-bang-space-after),
 [declaration-bang-space-before](https://stylelint.io/user-guide/rules/declaration-bang-space-before),
 
-## 大小写
-#### 要求@规则，选择器的标签、伪类、伪元素，属性、关键值、单位、函数名、颜色值、媒体查询均小写
+## Upper and Lower Case
+#### Requires @ rules, selector tags, pseudo-classes, pseudo-elements, attributes, key values, units, function names, color values, and media queries to be lowercase
 [at-rule-name-case](https://stylelint.io/user-guide/rules/at-rule-name-case)🔧,
 [selector-type-case](https://stylelint.io/user-guide/rules/selector-type-case),
 [selector-pseudo-element-case](https://stylelint.io/user-guide/rules/selector-pseudo-element-case),
@@ -309,8 +309,8 @@ li::before {}
 @media (min-width: 700px) and (orientation: landscape) {}
 ```
 
-## 分号
-#### 块结尾也使用分号，禁止多余的分号
+## Semicolon
+#### Block ends with a semicolon. No extra semicolons allowed.
 [declaration-block-trailing-semicolon](https://stylelint.io/user-guide/rules/declaration-block-trailing-semicolon)🔧,
 [no-extra-semicolons](https://stylelint.io/user-guide/rules/no-extra-semicolons)
 
@@ -325,11 +325,11 @@ li::before {}
 
 ```
 
-## 引号
-#### 统一使用双引号
+## Quotes
+####Use double quotes uniformly
 [string-quotes](https://stylelint.io/user-guide/rules/string-quotes)
 
-#### 要求属性选择器中的值必须添加引号
+#### Require that the value in the attribute selector must be quoted
 [selector-attribute-quotes](https://stylelint.io/user-guide/rules/selector-attribute-quotes)
 
 ``` css
@@ -340,10 +340,10 @@ li::before {}
 [target="_blank"] {}
 ```
 
-#### 要求url必须添加引号
+#### The URL must be enclosed in quotation marks
 [function-url-quotes](https://stylelint.io/user-guide/rules/function-url-quotes)
 
-#### 字体为多个单词时必须使用引号
+#### Quotes are required when the font is multiple words
 [font-family-name-quotes](https://stylelint.io/user-guide/rules/font-family-name-quotes)
 ``` css
 /* ✗ bad */
@@ -353,8 +353,8 @@ a { font-family: Times New Roman, Times, serif; }
 a { font-family: 'Times New Roman', Times, serif; }
 ```
 
-## 选择器
-#### 要求伪元素使用两个冒号
+## Selectors
+#### Require pseudo-elements to use two colons
 [selector-pseudo-element-colon-notation](https://stylelint.io/user-guide/rules/selector-pseudo-element-colon-notation)🔧
 
 ``` css
@@ -364,7 +364,7 @@ a:before { color: pink; }
 /* ✓ good */
 a::before { color: pink; }
 ```
-#### 要求规则之间没有降级特性
+#### Requires no downgrade features between rules
 [no-descending-specificity](https://stylelint.io/user-guide/rules/no-descending-specificity)
 ``` css
 /* ✗ bad */
@@ -376,8 +376,8 @@ a { color: gray; }
 #wrapper a { color: pink; }
 ```
 
-## 属性
-#### 每行最多定义2个属性
+## Properties
+#### Define up to 2 attributes per line
 [declaration-block-single-line-max-declarations](https://stylelint.io/user-guide/rules/declaration-block-single-line-max-declarations)
 
 ``` css
@@ -393,7 +393,7 @@ a {
 }
 ```
 
-#### 尽量简写属性
+#### Try to keep properties short
 [declaration-block-no-redundant-longhand-properties](https://stylelint.io/user-guide/rules/declaration-block-no-redundant-longhand-properties),
 [shorthand-property-no-redundant-values](https://stylelint.io/user-guide/rules/shorthand-property-no-redundant-values)🔧
 
@@ -418,7 +418,7 @@ a {
 }
 a { margin: 1px; }
 ```
-#### 禁止简写属性覆盖展开写法的属性
+#### Prevent shorthand properties from overwriting expanded properties
 [declaration-block-no-shorthand-property-overrides](https://stylelint.io/user-guide/rules/declaration-block-no-shorthand-property-overrides)
 
 ``` css
@@ -435,16 +435,16 @@ a {
 }
 ```
 
-## 值
-#### 要求有前导0，禁止有尾随0
+## Value
+#### Leading 0 is required, trailing 0 is prohibited
 [number-leading-zero](https://stylelint.io/user-guide/rules/number-leading-zero),
 [number-no-trailing-zeros](https://stylelint.io/user-guide/rules/number-no-trailing-zeros)
 
-#### 为0数字不带单位
+#### is a 0 number without a unit
 [length-zero-no-unit](https://stylelint.io/user-guide/rules/length-zero-no-unit)
 
-<!-- TODD: 为什么是6位？ -->
-#### 数字最多保留6位小数
+<!-- TODD: Why 6? -->
+#### The number can be kept up to 6 decimal places
 [number-max-precision](https://stylelint.io/user-guide/rules/number-max-precision)
 ```css
 /* ✓ bad */
@@ -454,19 +454,19 @@ a { top: 3.2450908px; }
 a { top: 3.245px; }
 
 ```
-#### 颜色尽可能使用名称，尽可能使用缩写的十六进制
+#### Use names for colors when possible, and use abbreviated hexadecimals when possible
 [color-named](https://stylelint.io/user-guide/rules/color-named),
 [color-hex-length](https://stylelint.io/user-guide/rules/color-hex-length)
 ```css
 /* ✗ bad */
 a { color: #000; }
-a { color: #ffffffaa; }
+a {color: #ffffffaa;}
 
 /* ✓ good */
 a { color: black; }
 a { color: #fffa; }
 ```
-#### `linear-gradient()`中的方向属性值必须符合标准语法
+#### Directional property values   in `linear-gradient()` must conform to standard syntax
 [function-linear-gradient-no-nonstandard-direction](https://stylelint.io/user-guide/rules/function-linear-gradient-no-nonstandard-direction)
 
 ``` css
@@ -481,8 +481,8 @@ a { color: #fffa; }
 .foo { background: linear-gradient(1.57rad,white,black); }
 ```
 
-## 注释
-#### 要求注释必须有内容，且符号和内容之间有一个空格或空行
+## Notes
+#### requires that comments must have content, and there must be a space or blank line between the symbol and the content
 [comment-whitespace-inside](https://stylelint.io/user-guide/rules/comment-whitespace-inside)
 [comment-no-empty](https://stylelint.io/user-guide/rules/comment-no-empty)
 
@@ -502,7 +502,7 @@ a { color: #fffa; }
 
 ```
 
-#### 禁止双斜线的注释
+#### Disable double slash comments
 [no-invalid-double-slash-comments](https://stylelint.io/user-guide/rules/no-invalid-double-slash-comments)
 
 ``` css
@@ -518,8 +518,8 @@ a {
 ```
 
 
-## 低级错误
-#### 禁止出现重复的属性、选择器、@import、字体名
+## Low-Level Error
+#### Disallow duplicate attributes, selectors, @import, font names
 [declaration-block-no-duplicate-properties](https://stylelint.io/user-guide/rules/declaration-block-no-duplicate-properties),
 [no-duplicate-selectors](https://stylelint.io/user-guide/rules/no-duplicate-selectors),
 [no-duplicate-at-import-rules](https://stylelint.io/user-guide/rules/no-duplicate-at-import-rules),
@@ -553,7 +553,7 @@ p {
 @import 'a.css';
 ```
 
-#### 禁止出现未知的@规则，选择器标签、伪类、伪元素，属性、单位、颜色值，媒体查询，动画
+#### Prohibit unknown @ rules, selector tags, pseudo-classes, pseudo-elements, attributes, units, color values, media queries, animations
 [at-rule-no-unknown](https://stylelint.io/user-guide/rules/at-rule-no-unknown),
 [selector-pseudo-class-no-unknown](https://stylelint.io/user-guide/rules/selector-pseudo-class-no-unknown),
 [selector-pseudo-element-no-unknown](https://stylelint.io/user-guide/rules/selector-pseudo-element-no-unknown),
@@ -608,7 +608,7 @@ a { animation-name: fancy-slide; }
 @keyframes fancy-slide {}
 ```
 
-#### 禁止字符串换行
+#### Disable string wrapping
 [string-no-newline](https://stylelint.io/user-guide/rules/string-no-newline)
 
 ``` css
@@ -624,7 +624,7 @@ a {
 }
 ```
 
-#### 要求字体结尾必须添加通用词
+#### Requires that a common word be added at the end of the font
 [font-family-no-missing-generic-family-keyword](https://stylelint.io/user-guide/rules/font-family-no-missing-generic-family-keyword)
 ``` css
 /* ✗ bad */
@@ -637,7 +637,7 @@ a {
 }
 ```
 
-#### keyframe 中禁止添加 important
+#### Do not add important in keyframe
 [keyframe-declaration-no-important](https://stylelint.io/user-guide/rules/keyframe-declaration-no-important)
 ```css
 /* ✗ bad */
@@ -659,14 +659,14 @@ a {
     }
 }
 ```
-## 参考
+## References
 
 - [stylelint-config-recommended](https://github.com/stylelint/stylelint-config-recommended)
 - [stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard)
 
-<!-- TODO：为什么注释掉
+<!-- TODO: Why comment out
 'at-rule-name-space-after': ['always-single-line'],
-#### 同行的媒体查询后必须后空格
+#### There must be a space after the same media query
 
 [at-rule-name-space-after](https://stylelint.io/user-guide/rules/at-rule-name-space-after)
 

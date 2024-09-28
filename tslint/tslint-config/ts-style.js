@@ -1,6 +1,6 @@
 module.exports = {
   "rules": {
-    // 针对数组使用 ‘T[]’ or ‘Array', 基本类型数组强制使用T[]
+    // Use 'T[]' or 'Array' for arrays, and T[] is mandatory for arrays of basic types
     "array-type": [
       true,
       "array-simple"
@@ -9,73 +9,73 @@ module.exports = {
     // () => { return x; } to () => x.
     "arrow-return-shorthand": true,
 
-    // 2位运算，变量在左
+    // 2-bit operation, variable on the left
     //"binary-expression-operand-order": true,
 
-    // PascalCased 类型名称单词头字母大写
+    // PascalCased type names have the first letter of the word capitalized
     "class-name": true,
 
-    // comment 必须以空格开头
+    // comment must start with a space
     "comment-format": [true, "check-space"],
 
-    // 限制comment的种类
+    // Limit the types of comments
     // "comment-type": true
 
-    // 强制 使用 JSDoc
+    // Force the use of JSDoc
     // completed-docs
 
-    // 强制utf8编码
+    // Force utf8 encoding
     // "encoding": true
 
-    // 强制文件头comment
+    // Mandatory file header comment
     // file-header
 
-    // 强制文件名为连字符形式
+    // Force filenames to be hyphenated
     "file-name-casing": [true, "kebab-case"],
 
-    // 强制使用 +=1 -=1
+    // Forced use of +=1 -=1
     // increment-decrement
 
-    // 强制 Interface以 I 开头
+    // Force Interface to start with I
     // interface-name
 
-    // interface声明好过type声明
+    // Interface declaration is better than type declaration
     // interface-over-type-literal
 
-    // 需要import声明的对象和名称严格匹配
+    // Requires strict matching of the object and name declared in the import statement
     // "match-default-export-name": true
 
-    // 连续条用需要换行
+    //Continuous bars need to be wrapped
     // "newline-per-chained-call": true,
 
-    // 用 as 替代 <Type>
+    // Replace <Type> with as
     // no-angle-bracket-type-assertion
 
     // if( x ===true)
     "no-boolean-literal-compare": true,
 
-    // 构造器中不允许有参数
+    // Constructor parameters are not allowed
     // "no-parameter-properties": true
 
-    // 不允许重复的jsdoc
+    // Duplicate jsdoc is not allowed
     // no-redundant-jsdoc
 
-    // 不允许 x => f(x) 这种无意义的函数调用
+    // Meaningless function calls such as x => f(x) are not allowed
     "no-unnecessary-callback-wrapper": true,
 
-    // 不允许初始值为 undefined
+    // Initial value is not allowed to be undefined
     "no-unnecessary-initializer": true,
 
-    // 不允许无意义的命名空间
+    // No meaningless namespaces allowed
     // "no-unnecessary-qualifier": true,
 
-    // 强制连续的字符串属性不为string表达
+    // Force continuous string attributes not to be expressed as strings
     "object-literal-key-quotes": true,
 
-    // 强制ES6对象简写
+    // Force ES6 object abbreviation
     "object-literal-shorthand": true,
 
-    // 确保 } 与 { catch else  finally, whitespace  同一行
+    // Make sure } is on the same line as { catch else finally, whitespace
     "one-line": [true,
       "check-open-brace",
       "check-catch",
@@ -84,16 +84,16 @@ module.exports = {
       "check-whitespace"
     ],
 
-    // 每次只能声明 一个变量，循环中可以多个
+    // Only one variable can be declared at a time, multiple variables can be declared in a loop
     "one-variable-per-declaration": [
       true,
       "ignore-for-loop"
     ],
 
-    // import 的 {}按字母顺序排序
+    // import {} are sorted in alphabetical order
     // "ordered-imports": true
 
-    // 类型方法中没有用到 this 需要写在外面变成额外的函数
+    // This is not used in the type method, so it needs to be written outside as an additional function
     "prefer-function-over-method": true,
 
     // prefer foo(): void over foo: () => void in interfaces and types.
@@ -102,16 +102,16 @@ module.exports = {
     // switch > if
     // prefer-switch
 
-    // 模板字符串更好
+    // Template strings are better
     // "prefer-template": true
 
-    // while更好
+    // while is better
     // prefer-while
 
-    // return; 比 return undefined 好
+    // return; is better than return undefined
     "return-undefined": true,
 
-    // xxx () {} 定义了在下列各种方法时括号前的空格要求
+    // xxx () {} defines the space requirements before the brackets in the following methods
     "space-before-function-paren": [
       true,
       {
@@ -123,20 +123,20 @@ module.exports = {
       }
     ],
 
-    // 括号间不允许有空格
+    // No spaces are allowed between brackets
     "space-within-parens": [true, 0],
-    // switch statement 必须以break结束
+    // switch statement must end with break
     "switch-final-break": true,
-    // 类型间 必须以；隔开
+    // Types must be separated by ;
     // "type-literal-delimiter": true
 
-    // 不需要 bind
+    // No need to bind
     // "unnecessary-bind": true,
 
-    // 如果 if 以 break, continue, return, or throw statement结束则不需要else
+    // If the if statement ends with a break, continue, return, or throw statement, then the else statement is not needed.
     // "unnecessary-else": true
 
-    // 变量名不能使用 any, Number, number, String, string, Boolean, boolean, Undefined, undefined
+    // Variable names cannot use any, Number, number, String, string, Boolean, boolean, Undefined, undefined
     "variable-name": [
       true,
       "ban-keywords"

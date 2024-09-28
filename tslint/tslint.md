@@ -1,11 +1,11 @@
 
-## 保证重写的方法 在代码位置上写在一起
+## Ensure that the overridden methods are written together in the code location
 adjacent-overload-signatures : true
 
-## 如果是基本类型或者引用类型可以使用T[] 否则使用Array<T>
+## If it is a basic type or reference type, you can use T[], otherwise use Array<T>
 array-type: 'array-simple'
 
-## 对齐
+## Alignment
     "align": [
       true,
       "statements",
@@ -15,8 +15,8 @@ array-type: 'array-simple'
       "members"
     ]
 
-## 单个参数的箭头函数，不允许加括号
+## Single parameter arrow function, parentheses are not allowed
 "arrow-parens": true
 
-## 箭头函数直接返回的简写
+## Shorthand for arrow function to return directly
 "arrow-return-shorthand": true

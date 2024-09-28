@@ -3,9 +3,9 @@
   "description": "Sharable eslint config for Kubevue",
   "version": "4.1.0",
   "author": "Kubeworkz <kubeworkz@gmail.com>",
-  "repository": "saashqdev/eslint-config",
+  "repository": "saashqdev/code-style/eslint-config",
   "bugs": {
-    "url": "https://github.com/saashqdev/eslint-config/issues"
+    "url": "https://github.com/saashqdev/code-style/eslint-config/issues"
   },
   "main": "index.js",
   "scripts": {

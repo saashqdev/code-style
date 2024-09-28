@@ -1,15 +1,15 @@
 # VSCODE CONFIG
 
-配置完成后可根据eslint保存以后自动格式化代码,实现代码风格统一。
+After the configuration is completed, the code can be automatically formatted according to eslint after saving to achieve a unified code style.
 
-## VSCODE 插件
-在扩展中装入下面4个插件
+## VSCODE Plugin
+Load the following 4 plugins in the extension
 - Vuter
 - Prettier
 - Prettier ESlint
 - ESlint
 
-## VSCODE 配置
+## VSCODE Configuration
 ```
 {
  "editor.formatOnSave": true,
@@ -34,4 +34,4 @@
 }
 ```
 
-打开VSCODE，点开设置，右上角切换成setting.json。将上面的数据粘贴到setting.json当中。有些同学可以有自己的风格，注意已经的有配置需要替换，如果觉得麻烦也可以直接全部黏贴，替换自己的配置。
+Open VSCODE, click on settings, and switch to setting.json in the upper right corner. Paste the above data into setting.json. Some students may have their own style. Note that there are already configurations that need to be replaced. If you find it troublesome, you can just paste all and replace your own configuration.

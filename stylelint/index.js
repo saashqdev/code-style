@@ -129,14 +129,14 @@ module.exports = {
         'declaration-colon-space-after': ['always-single-line'],
         'declaration-colon-space-before': ['never'],
         // @has-problem: 'declaration-empty-line-before': ['never'],
-        // @has-problem: 'declaration-block-semicolon-newline-after': ['always-multi-line'], // TODO: 与一行最多定义两个规则有冲突。同时设置，只有a{x:1; b:2}在一行才是validate的
+        // @has-problem: 'declaration-block-semicolon-newline-after': ['always-multi-line'], // TODO: Conflicts with defining at most two rules per line. At the same time, only a{x:1; b:2} is valid in a row.
         'declaration-block-semicolon-newline-before': ['never-multi-line'],
         'declaration-block-semicolon-space-after': ['always-single-line'],
         'declaration-block-semicolon-space-before': ['never'],
         'declaration-block-trailing-semicolon': ['always'],
         'block-closing-brace-empty-line-before': ['never'],
         'block-closing-brace-newline-after': ['always'],
-        // @has-problem: 'block-closing-brace-space-after': ['never'], //不需要，有了‘block-closing-brace-newline-after’的限制，不会出现这个情况
+        // @has-problem: 'block-closing-brace-space-after': ['never'], /No need, with the restriction of 'block-closing-brace-newline-after', this situation will not occur.
         // @has-problem: 'block-closing-brace-newline-before': ['always-multi-line'],
         'block-closing-brace-space-before': ['always-single-line'],
         // @has-problem: 'block-opening-brace-newline-after': ['always-multi-line'],

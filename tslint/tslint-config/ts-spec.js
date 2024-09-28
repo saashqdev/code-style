@@ -2,16 +2,16 @@ module.exports = {
   "rules": {
     "adjacent-overload-signatures": true,
 
-    // 禁用 @ts-ignore
+    // Disable @ts-ignore
     // "ban-ts-ignore": true
 
-    // 禁用特定类型
+    // Disable specific types
     // "ban-types": [true, ["Object", "Use {} instead."], ["String"]]
 
-    // 控制类属性访问
+    // Control class attribute access
     // "member-access": [true, "no-public"],
 
-    // 类属性排序，更易读
+    // Class attributes are sorted, easier to read
     "member-ordering": [
       true,
       {
@@ -29,78 +29,78 @@ module.exports = {
         "alphabetize": true
       }
     ],
-    // 不能有 any 类型
+    // Cannot have any type
     // "no-any": true
 
-    // 不允许空接口
+    // Empty interfaces are not allowed
     "no-empty-interface": true,
 
-    // 不能引入不 export 但对整个项目有影响的模块
+    // Modules that are not exported but have an impact on the entire project cannot be imported
     // "no-import-side-effect": true
 
-    //  serverId: number = 10 可以由类型推断得出的基本类型不需要明显声明类型
+    // serverId: number = 10 Basic types that can be inferred by type do not need to be explicitly declared
     "no-inferrable-types": [
       true,
       "ignore-params"
     ],
 
-    // module MyModule {} 这种情况下用 namespace 替代 module
+    // module MyModule {} In this case, use namespace instead of module
     "no-internal-module": true,
 
-    // 只能使用其中的数字
+    // Only numbers can be used
     // "no-magic-numbers": [true, 1,2,3]
 
-    // 不能使用 namespace 或 module
+    // Cannot use namespace or module
     // "no-namespace": true
 
-    // 不能使用 非空变量断言 xxxx!
+    // Cannot use non-null variable assertion xxxx!
     // "no-non-null-assertion" :true
 
-    // 不能对参数赋值
+    // Cannot assign values   to parameters
     // "no-parameter-reassignment": true
 
-    // 不允许 /// <reference path=> imports
+    // Not allowed /// <reference path=> imports
     // "no-reference": ture
 
-    // 不允许不改变表述类型的类型声明
+    // Type declarations that do not change the representation type are not allowed
     // "no-unnecessary-type-assertion": true
 
-    // 不允许 require()
+    // require() is not allowed
     // "no-var-requires": true;
 
-    // 匿名函数只允许箭头函数 allow-named-functions
+    // Anonymous functions only allow arrow functions allow-named-functions
     "only-arrow-functions": [
       true,
       "allow-named-functions"
     ],
 
-    // 如果序号对循环没有别的用处使用for of
+    // If the sequence number has no other use for the loop, use for of
     "prefer-for-of": true,
 
-    // async 指定的函数需要返回一个Promise对象
+    // The function specified by async needs to return a Promise object
     "promise-function-async": [
       true,
-      "check-function-declaration", // 函数声明
-      "check-function-expression", // 函数表达式
-      "check-arrow-function", // 箭头函数
-      "check-method-declaration" // 类方法声明
+      "check-function-declaration", // Function declaration
+      "check-function-expression", // function expression
+      "check-arrow-function", // Arrow function
+      "check-method-declaration" // class method declaration
     ],
 
-    // 需要对应的类型显示声明定义
+    // Need the corresponding type to display the declaration definition
     "typedef": [
       true,
-      "call-signature", //检查函数返回类型
-      "arrow-call-signature", //检查箭头函数返回类型
-      "parameter", //检查非箭头函数的参数类型
-      "arrow-parameter", //检查箭头函数的参数类型
-      "property-declaration", //检查类属性声明
-      "variable-declaration", //检查局部变量声明
-      "member-variable-declaration", //检查成员变量声明
-      "object-destructuring", //检查对象解构赋值声明
-      // "array-destructuring", //检查数组解构赋值声明
+      "call-signature", // Check function return type
+      "arrow-call-signature", // Check the return type of the arrow function
+      "parameter", // Check the parameter type of non-arrow function
+      "arrow-parameter", // Check the parameter type of the arrow function
+      "property-declaration", //Check class property declaration
+      "variable-declaration", // Check local variable declaration
+      "member-variable-declaration", //Check member variable declaration
+      "object-destructuring", // Check object destructuring assignment declaration
+      // "array-destructuring", //Check array destructuring assignment declaration
     ],
 
-    // 若重写函数能够被合并成一个，则报警
+    // If the rewritten functions can be merged into one, then alarm
     "unified-signatures": true,
   },
 }

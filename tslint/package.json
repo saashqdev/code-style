@@ -1,11 +1,11 @@
 {
-  "name": "tslint-config-Kubevue",
+  "name": "tslint-config-kubevue",
   "description": "Sharable tslint config for Kubevue",
   "version": "0.0.1",
-  "author": "TonyWang <452663934@qq.com>",
-  "repository": "Kubevue/tslint-config",
+  "author": "kubeworkz <kubeworkz@gmail.com>",
+  "repository": "saashqdev/code-style/tslint-config",
   "bugs": {
-    "url": "https://github.com/Kubevue/code-style/issues"
+    "url": "https://github.com/saashqdev/code-style/issues"
   },
   "main": "./tslint-config/rules.js",
   "scripts": {
@@ -22,7 +22,7 @@
     "tslint",
     "tslint-config",
     "tslintconfig",
-    "Kubevue"
+    "kubevue"
   ],
   "devDependencies": {
     "gulp-tslint": "^8.1.4",

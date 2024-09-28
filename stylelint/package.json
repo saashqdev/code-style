@@ -1,5 +1,5 @@
 {
-  "name": "stylelint-config-Kubevue",
+  "name": "stylelint-config-kubevue",
   "description": "Sharable stylelint config for Kubevue",
   "version": "1.1.2",
   "scripts": {

@@ -1,39 +1,39 @@
 module.exports = {
     "rules": {
-        // 循环复杂度
+        // Cyclomatic complexity
         // "cyclomatic-complexity": [true, 20]
 
-        // 字面意思
+        // Literal meaning
         // deprecation: true
 
-        // 单文件中可以定义的类型数
+        // The number of types that can be defined in a single file
         // "max-classes-per-file": [true, 1]
 
-        // 单个文件最大行数
+        // Maximum number of lines in a single file
         // "max-file-line-count": [true, 300]
 
-        // 不允许export default
+        // Do not allow export default
         "no-default-export": true,
 
-        // 不允许引入 default
+        // Do not allow default to be introduced
         // no-default-import
 
-        // 不允许重复引入同一个模块
+        // Do not allow repeated import of the same module
         "no-duplicate-imports": true,
 
-        // 不允许单文件中出现可融合的namespace
+        // Do not allow mergeable namespaces to appear in a single file
         // "no-mergeable-namespac"
 
-        // 不允许 require().
+        // require() is not allowed.
         // "no-require-imports": true,
 
-        // 强制定义对象的时候key遵循字母排序
+        // Force keys to follow alphabetical order when defining objects
         // "object-literal-sort-keys": true,
 
-        // 比起let var 更偏向于const
+        // Prefer const to let var
         "prefer-const": true,
 
-        // 私有变量倾向于是readonly
+        // Private variables tend to be readonly
         // "prefer-readonly": true
     }
 }
