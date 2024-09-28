@@ -3,7 +3,7 @@
 ## Configuration
 
 ``` shell
-npm install --save-dev eslint eslint-config-Kubevue
+npm install --save-dev eslint eslint-config-kubevue
 ```
 
 Then create the `.eslintrc` file:

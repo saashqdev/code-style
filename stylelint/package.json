@@ -11,7 +11,7 @@
   },
   "devDependencies": {
     "eslint": "4.19.1",
-    "eslint-config-Kubevue": "^2.1.2",
+    "eslint-config-kubevue": "^2.1.2",
     "stylelint": "^9.3.0"
   }
 }

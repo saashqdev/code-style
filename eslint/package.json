@@ -1,11 +1,11 @@
 {
   "name": "eslint-config-kubevue",
   "description": "Sharable eslint config for Kubevue",
-  "version": "4.1.0",
+  "version": "3.0.3",
   "author": "Kubeworkz <kubeworkz@gmail.com>",
   "repository": "saashqdev/code-style/eslint-config",
   "bugs": {
-    "url": "https://github.com/saashqdev/code-style/eslint-config/issues"
+    "url": "https://github.com/saashqdev/code-style/issues"
   },
   "main": "index.js",
   "scripts": {
@@ -16,23 +16,24 @@
     "eslint",
     "eslint-config",
     "eslintconfig",
-    "Kubevue"
+    "kubevue"
   ],
   "tags": [
     "eslint",
     "eslint-config",
     "eslintconfig",
-    "Kubevue"
+    "kubevue"
   ],
   "peerDependencies": {
-    "eslint": "^7.32.0"
+    "eslint": "^5.12.0"
   },
   "devDependencies": {
-    "eslint": "^7.32.0"
+    "eslint": "^5.12.0"
   },
   "dependencies": {
-    "eslint-plugin-chai-friendly": "^0.7.2",
-    "eslint-plugin-vue": "^8.6.0",
-    "vue-eslint-parser": "^8.3.0"
+    "babel-eslint": "^10.0.1",
+    "eslint-plugin-chai-friendly": "^0.4.1",
+    "eslint-plugin-vue": "^5.1.0",
+    "vue-eslint-parser": "^5.0.0"
   }
 }
